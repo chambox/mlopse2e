@@ -1,15 +1,8 @@
 $schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
 code: model
 command: >-
-  python 
-  --
-  --
-inputs:
-  training_data: 
-    type: uri_folder 
-    path: 
-  reg_rate: 0.01
+  python test_train.py 
 environment: azureml:AzureML-sklearn-0.24-ubuntu18.04-py37-cpu@latest
-compute: 
-experiment_name: 
-description: 
+compute: tnt-ml-compute
+experiment_name: test_experiment
+description: "Training a classification model for diabetes prediction"

@@ -1,0 +1,12 @@
+$schema: https://azuremlschemas.azureedge.net/latest/managedOnlineEndpoint.schema.json
+name: diabetes-model-endpoint
+auth_mode: key
+deployments:
+  - name: blue
+    model: azureml:diabetes_model:1
+    code_configuration:
+      code: scripts/
+      scoring_script: score.py
+    environment: azureml:myenv:1
+    instance_type: Standard_DS2_v2
+    instance_count: 1

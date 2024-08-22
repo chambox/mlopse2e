@@ -1,0 +1,17 @@
+name: project_2_env
+dependencies:
+  - python=3.8
+  - scikit-learn
+  - pandas
+  - numpy
+  - matplotlib
+  - pip:
+    - azureml-core
+    - azureml-sdk
+    - mlflow
+    - joblib
+    - azure-identity
+    - azure-ai-ml
+channels:
+  - anaconda
+  - conda-forge

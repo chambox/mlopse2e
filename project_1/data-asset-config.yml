@@ -1,0 +1,8 @@
+$schema: https://azuremlschemas.azureedge.net/latest/dataAsset.schema.json
+type: uri_file
+path: https://tntml4594682607.blob.core.windows.net/azureml-blobstore-3f8329fc-8f64-4616-bc52-c2cc8e9f71ea/LocalUpload/diabetes-dev.csv?sv=2022-11-02&ss=bfqt&srt=so&sp=rwdlacupiytfx&se=2024-08-21T12:10:23Z&st=2024-08-21T04:10:23Z&spr=https&sig=BLmpAYceXqjVxHa7ZDbilVeXRdmeWjT60bRblFWKBCU%3D
+name: diabetes-dev-file-v1
+description: Data asset for diabetes development data
+tags:
+  version: "1.0"
+  type: "development"

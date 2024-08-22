@@ -1,0 +1,6 @@
+$schema: https://azuremlschemas.azureedge.net/latest/environment.schema.json
+name: environment_project_2
+version: 2.3
+conda_file: ./environment.yml
+description: "Custom environment for ML projects"
+image: mcr.microsoft.com/azureml/openmpi3.1.2-ubuntu18.04

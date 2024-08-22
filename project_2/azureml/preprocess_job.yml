@@ -1,0 +1,7 @@
+$schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
+code: ../scripts/
+command: python preprocess.py
+environment: azureml:environment_project_2:2.1
+compute: tnt-ml-compute  # ensure this environment has all necessary packages
+experiment_name: data-preprocessing
+description: "Preprocess data for diabetes model training"
